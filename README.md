@@ -12,14 +12,14 @@ The dataset contains a lot of different features for the cars, such as the manuf
 
 Looking at the charts below, we decide to build the model for logarithm of price, instead of the raw variable.
 
-<center><img src="images/hist_price.png" alt="histogram_prices" width="550"/></center>
+<center><img src="images/hist_price.png" alt="histogram_prices" /></center>
 
 #### Few visualizations for relationship between features and prices
 Odometer reading and the year of manufacture have a clear impact on the price of the used car.
-<center><img src="images/px_year_odometer.png" alt="year_odometer" height="250"/></center>
+<center><img src="images/px_year_odometer.png" alt="year_odometer"/></center>
 
 Cars in *new* or *like-new* condtion are sold at a price higher than those in *fair* or *salvage* condition. Similarly, the drive of the car and engine types also impact the price.
-<center><img src="images/px_fuel_condition_drive.png" alt="other_features" height="200"/></center>
+<center><img src="images/px_fuel_condition_drive.png" alt="other_features" /></center>
 
 ## Data Processing
 At this step, we prepare the data for building models.
@@ -28,7 +28,7 @@ At this step, we prepare the data for building models.
 
 More details are provided in the [jupyter notebook](car_price_drivers.ipynb), but the following chart gives an overview of the data processing pipeline.
 
-<center><img src="images/pipe_process.png" alt="processing" height="250"></center>
+<center><img src="images/pipe_process.png" alt="processing" ></center>
 
 ## Model and Evaluation
 
@@ -38,7 +38,7 @@ We build a few different kinds of models, based on simple averages, target-encod
 
  A curious thing to observe is that for both RFE and LASSO, the GrisSearchCV selects the models with the highest number of features and the lowest amount of regularization.There may be strong non-linearity in the model.
  
- <center><img src="images/evaluation_rmse.png" alt="processing" height="200"></center>
+ <center><img src="images/evaluation_rmse.png" alt="processing" ></center>
 
 For the final inferential model, we use a polynomial degree of 2 and use LASSO with a regularization parameter of $\alpha = 0.01$.
 
@@ -47,10 +47,10 @@ The manufacturer and model of the car, odometer reading, year of manufacture and
 
 FWD and 4WD cars are preferable to those with RWD, and diesel and gas engines are preferable to other fuel types.
 
- <center><img src="images/feature_importance.png" alt="feature_imp" width="500"></center>
+ <center><img src="images/feature_importance.png" alt="feature_imp"></center>
 
 **Two identical 2020 Chevroler Silverado 1500 have a price differential of $18k with a change in odometer reading**
-  <center><img src="images/chevrolet.png" alt="chevrolet" height="70"></center>
+  <center><img src="images/chevrolet.png" alt="chevrolet" height="100"></center>
 
 
 ### Next Steps
