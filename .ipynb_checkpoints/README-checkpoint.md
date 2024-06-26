@@ -10,11 +10,16 @@ The first step was to determine the business goal of this project, which is to i
 
 The dataset contains a lot of different features for the cars, such as the manufacturer and model of the car, the year of manufacture, odometer reading, condition, size, and so on. After cleaning the data, which involves removing observations with extreme data points, we explore the relationship of price with different variables. 
 
-<img src="images/hist_price.png" alt="histogram_prices" width="200"/>
+<img src="images/hist_price.png" alt="histogram_prices" width="600"/>
 
-![title](images/hist_price.png)
+#### Few visualizations for relationship between features and prices
+
+<img src="images/px_year_odometer.png" alt="year_odometer" width="600"/>
+<img src="images/px_fuel_condition_drive.png" alt="other_features" width="600"/>
 
 ## Data Processing
+
+<img src="images/pipe_process.png" alt="processig" width="600"/>
 
 ## Model and Evaluation
 
